@@ -10,15 +10,22 @@
     <!-- my css -->
   </head>
   <body>
-    <div id="app">
+    <!-- controllo vue -->
+    <div id="app" v-cloak>
+      <!-- container lista email -->
       <div class="container">
+        <!-- titolo lista -->
         <h1>Emal list</h1>
 
-        <ul>
+        <!-- Lista delle email -->
+        <ul v-if="emails.length === 10">
           <li v-for="(email, index) in emails">{{index + 1}} - {{email}}</li>
         </ul>
+        <!-- Lista delle email -->
       </div>
+      <!-- container lista email -->
     </div>
+    <!-- controllo vue -->
 
     <!-- vue js -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
