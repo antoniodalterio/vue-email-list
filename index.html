@@ -4,20 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vue Email List</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- my css -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- my css -->
   </head>
   <body>
-    <div class="container">
-      <h1>Emal list</h1>
-      <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-      </ul>
+    <div id="app">
+      <div class="container">
+        <h1>Emal list</h1>
+
+        <ul>
+          <li v-for="(email, index) in emails">
+            {{index + 1}} - {{email.response}}
+          </li>
+        </ul>
+      </div>
     </div>
 
     <!-- vue js -->
