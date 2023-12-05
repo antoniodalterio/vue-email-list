@@ -9,3 +9,40 @@ RESET
   padding: 0;
   box-sizing: border-box;
 }
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: rgb(26, 26, 26);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* 
+*************
+MAIN
+*************
+*/
+
+.container {
+  width: 70%;
+  margin: 50px auto;
+}
+
+.container h1 {
+  margin-bottom: 20px;
+  font-size: 3.125rem;
+  text-align: center;
+  color: rgb(230, 230, 230);
+}
+
+.container ul {
+  border: 1px solid rgb(14, 14, 14);
+  border-radius: 5px;
+  background-color: rgb(212, 212, 212);
+}
+
+.container li {
+  padding: 20px;
+  border-bottom: 1px solid black;
+}
